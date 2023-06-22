@@ -1,3 +1,10 @@
 import './style.css';
 
-console.log('funguju!');
+import { Home } from './pages/Home/index.js';
+
+const appElm = document.querySelector("#app");
+const { pathname } = window.location;
+
+if(pathName === "/") {
+    appElm.append(Home());
+}
